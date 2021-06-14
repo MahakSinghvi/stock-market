@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearlayout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        tools:context=".activity.AddActivity">
+
+        <RelativeLayout
+            android:id="@+id/tollbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:src="@drawable/icon_back" />
+
+            <TextView
+                style="@style/myTextView"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_toRightOf="@id/imgBack"
+                android:fontFamily="@font/font_arial"
+                android:text="Add"
+                android:textSize="@dimen/_14sdp" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/white" />
+
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            app:borderColor="@color/white"
+            app:borderWidth="@dimen/_1sdp"
+            app:cornerRadius="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            app:borderColor="@color/white"
+            app:borderWidth="@dimen/_1sdp"
+            app:cornerRadius="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/etCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Code"
+                android:inputType="text"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            app:borderColor="@color/white"
+            app:borderWidth="@dimen/_1sdp"
+            app:cornerRadius="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/etLotSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lot Size"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            app:borderColor="@color/white"
+            app:borderWidth="@dimen/_1sdp"
+            app:cornerRadius="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/etstrikegap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Strike Gap"
+                android:inputType="number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+        <ss.anoop.awesometextinputlayout.AwesomeTextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_4sdp"
+            app:borderColor="@color/white"
+            app:borderWidth="@dimen/_1sdp"
+            app:cornerRadius="@dimen/_5sdp">
+
+            <EditText
+                android:id="@+id/ettotalstrike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Strike"
+                android:inputType="number"
+                 android:maxLength="2"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </ss.anoop.awesometextinputlayout.AwesomeTextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:background="#737272"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+</layout>

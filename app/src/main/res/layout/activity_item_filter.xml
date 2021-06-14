@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        tools:context=".activity.ItemFilterActivity">
+
+        <RelativeLayout
+            android:id="@+id/tollbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:src="@drawable/icon_back"></ImageView>
+
+            <TextView
+                style="@style/myTextView"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_toRightOf="@id/imgBack"
+                android:fontFamily="@font/font_arial"
+                android:text="Filter"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/white"></View>
+
+
+        <CheckBox
+             android:id="@+id/ratioCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="R/R Ratio"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/ratioLL"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:buttonTint="@color/white"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:text=" Less than 2"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:buttonTint="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:text=" Greater than  2"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:buttonTint="@color/white"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:text=" EqualTo 2"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+             android:id="@+id/rewardsCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="Rewards"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/rewardsLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:buttonTint="@color/white"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="More  than 1000"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:buttonTint="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:text="More  than 100000"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:buttonTint="@color/white"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:text="Less  than 100000"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+
+        <CheckBox
+             android:id="@+id/riskCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:buttonTint="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="@dimen/_5sdp"
+            android:text="Risk"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></CheckBox>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_5sdp"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/riskLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:buttonTint="@color/white"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textSize="@dimen/_14sdp"
+                    android:text="Less than 5 lakh "/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:buttonTint="@color/white"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:text="Less than 10 lakh "/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_14sdp"
+                    android:buttonTint="@color/white"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:text="Less than 20 lakh "/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:background="#737272"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"></Button>
+
+    </LinearLayout>
+</layout>

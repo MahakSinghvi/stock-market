@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_1sdp"
+        android:background="@drawable/card_view_rectangle"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+                <TextView
+                    android:id="@+id/nameTV"
+                    style="@style/myTextView"
+                    android:fontFamily="@font/font_arial"
+                    android:text="SPICE JET"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/blue_color"></TextView>
+
+                <TextView
+                    android:id="@+id/codeTV"
+                    style="@style/myTextView"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="SPICE JET | 146.45-306.5"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/lotsizeTV"
+                    style="@style/myTextView"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Actual High | 146.55"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+
+                <TextView
+                    android:id="@+id/strikegapTV"
+                    style="@style/myTextView"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="Actual Low | 30.65"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+                <TextView
+                    android:id="@+id/tstrikeTV"
+                    style="@style/myTextView"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="16/03/2021, 07:34 AM"
+                    android:textSize="@dimen/_12sdp"></TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/deleteIV"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:src="@drawable/icon_delete"></ImageView>
+
+    </LinearLayout>
+</layout>

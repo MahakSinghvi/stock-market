@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_2sdp"
+        android:background="@drawable/card_view_rectangle"
+        android:backgroundTint="@android:color/transparent"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/et_background_trans"
+            android:gravity="center"
+            android:hint="call"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <TextView
+            android:id="@+id/tvValue2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/et_background_trans"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/_12sdp" />
+
+
+        <EditText
+            android:id="@+id/etPut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/et_background_trans"
+            android:gravity="center"
+            android:hint="put"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint_color"
+            android:textSize="@dimen/_12sdp" />
+
+    </LinearLayout>
+</layout>
